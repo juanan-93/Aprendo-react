@@ -1,20 +1,20 @@
-import React, { useState} from 'react';
-import styles from "./Header.module.css";
-import Menu from '../Menu';
-import Title from '../Title';
-import HamburgerButton from '../Hamburguer';
+import React from "react";
+import { MenuContextProvider } from "../../context/MenuContext";
+import Menu from "../Menu";
+import Title from "../Title";
+import HamburgerButton from "../Hamburger";
+import styles from './Header.module.css';
 
 export default function Header() {
 
-    return (
+  return (
+    <header>
+      <Title />
 
-        <div className={styles.header}>
-            <Title/>
-            <HamburgerButton/>
-            <Menu/>
-        </div>
-            
-    );
-
+      <MenuContextProvider>
+        <HamburgerButton />
+        <Menu />
+      </MenuContextProvider>
+    </header>
+  );
 }
-

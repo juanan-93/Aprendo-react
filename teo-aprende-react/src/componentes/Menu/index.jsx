@@ -1,10 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext} from 'react';
+import MenuContext from '../../context/MenuContext';
 import styles from  './Menu.module.css';
 
 export default function Menu() {
 
+  const {open, setOpen} = useContext(MenuContext)
+  const menuClass = open ? `${styles.menu} ${styles.active}` : `${styles.menu}`
+
   return (
-    <div className={styles.menu}>
+    <div className={menuClass}>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
