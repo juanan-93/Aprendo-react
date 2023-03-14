@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import './table.module.css';
 
-function Table() {
+export default function Table() {
 
     return (
         <div>  
@@ -12,4 +12,3 @@ function Table() {
 
 }
 
-export default Table;

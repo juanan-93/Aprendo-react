@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from "../componentes/Menu";
+import Header from "../componentes/Header";
 
 export default function Home() {
     return (
         <div className="home">
-            <Menu/>
+            <Header/>
         </div>
     );
 }

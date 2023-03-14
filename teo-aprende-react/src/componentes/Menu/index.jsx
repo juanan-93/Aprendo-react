@@ -1,24 +1,17 @@
-import React, { useState} from 'react';
-import styles from "./Menu.module.css";
+import React, {useEffect, useState} from 'react';
+import styles from  './Menu.module.css';
 
-function Menu() {
+export default function Menu() {
 
-    return (
-
-        <div className='menu'>
-
-            <nav>
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>    
-            </nav> 
-        
-        </div>
-            
-    );
-
+  return (
+    <div className={styles.menu}>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
-
-export default Menu;

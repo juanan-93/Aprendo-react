@@ -1,13 +1,16 @@
 import React, { useState} from 'react';
 import styles from "./Header.module.css";
-import Header from './componentes/Menu';
-import Header from './componentes/Header';
+import Menu from '../Menu';
+import Title from '../Title';
+import HamburgerButton from '../Hamburguer';
 
-function Header() {
+export default function Header() {
 
     return (
 
-        <div className='header'>
+        <div className={styles.header}>
+            <Title/>
+            <HamburgerButton/>
             <Menu/>
         </div>
             
@@ -15,4 +18,3 @@ function Header() {
 
 }
 
-export default Header;
