@@ -1,16 +1,11 @@
-import './App.css';
 import React, { useState} from 'react';
-import Table from './componentes/table/Table';
+import Home from './pages/home';
 
 function App() {
 
-
-
-
-
   return (
     <div className="App">
-      <Table/>
+      <Home/>
     </div>
   );
 }
