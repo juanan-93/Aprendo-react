@@ -1,0 +1,21 @@
+
+.table{
+    margin-left: auto;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 25rem;
+}
+
+
+
+table td, table th{
+    border: 1px solid black;
+    
+
+}
+

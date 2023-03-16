@@ -5,11 +5,11 @@ import Header from "../components/Header";
 export default function Layout() {
 
   const { panel } = useParams();
-  const title = panel ? panel : 'Inicio';
+  const parameter = panel ? panel : 'Inicio';
 
   return (
     <>
-      <Header title={title} />
+      <Header title={parameter} />
       <Outlet />
     </>
   )

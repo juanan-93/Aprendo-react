@@ -5,11 +5,11 @@ import Title from "../Title";
 import HamburgerButton from "../Hamburger";
 import styles from './Header.module.css';
 
-export default function Header() {
+export default function Header({title}) {
 
   return (
     <header>
-      <Title />
+      <Title polla={title}/>
 
       <MenuContextProvider>
         <HamburgerButton />
